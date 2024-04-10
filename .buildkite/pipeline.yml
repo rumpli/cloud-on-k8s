@@ -3,6 +3,9 @@ env:
 
 steps:
 
+  - command: hack/renovate/sync.sh
+  - wait
+
   - group: checks
     steps:
 
